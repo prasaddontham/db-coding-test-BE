@@ -54,15 +54,15 @@ public class TradingStrategy implements PriceListener {
     }
 
     /**
-     * @param security      ecurity (instrument)
-     * @param sellThreshold bove which a buy order to be processed.
+     * @param security      security (instrument)
+     * @param sellThreshold above which a buy order to be processed.
      */
     public void setSellThreshold(String security, Double sellThreshold) {
         sellThresholds.put(security, sellThreshold);
     }
 
     /**
-     * @return The volume we would like to trade.
+     * @return The volume.
      */
     public Integer getVolume() {
         return volume;
